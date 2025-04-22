@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "S:\\IGS\\G30 LEHRE\\G31 Vorlesungen\\G31.12 Numerical modelling of soil and concrete structure (COMMAS, Modul 68790)\\2025 SS\\06_Github\\NMS2025\\exercise1\\Exercise124042025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40F18184-CB37-5439-CC8C-23BF124720FF}|Exercise124042025\\Exercise124042025.vfproj|s:\\igs\\g30 lehre\\g31 vorlesungen\\g31.12 numerical modelling of soil and concrete structure (commas, modul 68790)\\2025 ss\\06_github\\nms2025\\exercise1\\exercise124042025\\exercise124042025\\matrixmultiplication.f90||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{40F18184-CB37-5439-CC8C-23BF124720FF}|Exercise124042025\\Exercise124042025.vfproj|solutionrelative:exercise124042025\\matrixmultiplication.f90||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{b015bca8-f686-4aaf-a093-5d028dbdb089}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{b015bca8-f686-4aaf-a093-5d028dbdb089}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{b015bca8-f686-4aaf-a093-5d028dbdb089}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{b015bca8-f686-4aaf-a093-5d028dbdb089}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{b015bca8-f686-4aaf-a093-5d028dbdb089}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{b015bca8-f686-4aaf-a093-5d028dbdb089}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MatrixMultiplication.f90",
+              "DocumentMoniker": "S:\\IGS\\G30 LEHRE\\G31 Vorlesungen\\G31.12 Numerical modelling of soil and concrete structure (COMMAS, Modul 68790)\\2025 SS\\06_Github\\NMS2025\\exercise1\\Exercise124042025\\Exercise124042025\\MatrixMultiplication.f90",
+              "RelativeDocumentMoniker": "Exercise124042025\\MatrixMultiplication.f90",
+              "ToolTip": "S:\\IGS\\G30 LEHRE\\G31 Vorlesungen\\G31.12 Numerical modelling of soil and concrete structure (COMMAS, Modul 68790)\\2025 SS\\06_Github\\NMS2025\\exercise1\\Exercise124042025\\Exercise124042025\\MatrixMultiplication.f90",
+              "RelativeToolTip": "Exercise124042025\\MatrixMultiplication.f90",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACHSURBVDhPvZPBDcAgCAClPxmtcYoO1ilMR8OnDQlEpT6kTXofNcETRKHWGhQAkNkIEbWgDowxDIJSyjSQufCUWWOn4ylIKcmqkXP2CXiDRQW8qWeTcRkWqQwRwS2wuAVcQl/G6ww4fR6XBfZkxZ2BbfP/l2j5LFh6yhZ\u002BqdqF5c9kmQr8hHADIeBJHT9TZrUAAAAASUVORK5CYIIAAAAAAAAAAAAAAAAAAA==",
+              "WhenOpened": "2025-04-22T09:02:54.88Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -92,7 +92,7 @@ NUMERICAL-SOILS-SS25/
 ## License
 This project is for academic use only. Please do not publish or share the solutions online.
 
-Happy Modelling!
+## Happy Modelling!
 
 
 
