@@ -75,6 +75,7 @@ git push origin week1-exercise
 ```
 
 ## Repository Structure
+```bash
 NUMERICAL-SOILS-SS25/
 │
 ├── exercise01/
@@ -86,6 +87,7 @@ NUMERICAL-SOILS-SS25/
 ├── solutions/           # Instructor-provided (may be private)
 ├── README.md
 └── requirements.txt     # Python dependencies (if applicable)
+```
 
 ## License
 This project is for academic use only. Please do not publish or share the solutions online.
