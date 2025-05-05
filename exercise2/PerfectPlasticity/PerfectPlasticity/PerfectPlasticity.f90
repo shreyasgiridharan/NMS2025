@@ -45,7 +45,7 @@ program triaxial_test
     sin_phi = sin(phi_rad)
     cos_phi = cos(phi_rad)
     
-    ! Calculate Drucker-Prager parameters (as per image 1)
+    ! Calculate Drucker-Prager parameters 
     A_dp = 6.0_dp * cohesion * cos_phi / (sqrt(3.0_dp) * (3.0_dp - sin_phi))
     B_dp = 2.0_dp * sin_phi / (sqrt(3.0_dp) * (3.0_dp - sin_phi))
     
