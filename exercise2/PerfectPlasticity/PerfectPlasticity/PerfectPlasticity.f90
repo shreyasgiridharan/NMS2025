@@ -29,7 +29,7 @@ program triaxial_test
     character(len=30) :: filename
     
     ! Initialize parameters
-    conf_pressure = 100.0_dp    ! Confining pressure (kPa)
+    conf_pressure = 200.0_dp    ! Confining pressure (kPa)
     E = 10000.0_dp              ! Young's modulus (kPa)
     nu = 0.3_dp                 ! Poisson's ratio
     friction_angle = 30.0_dp    ! Friction angle (degrees)
@@ -122,7 +122,7 @@ contains
         ! Calculate axial stress using Hooke's law
         ! Under confined conditions where lateral stresses are constant:
         ! Δσ₁ = E*ε₁
-        axial_stress = conf_p + ! E*ε₁ must be filled in
+        axial_stress = conf_p + young * axial_strain! E*ε₁ must be filled in
     end subroutine elastic_model
     
     !----------------------------------------------------------------------
@@ -140,20 +140,20 @@ contains
         
         ! In triaxial test, principal stresses are:
         sigma(1) = elastic_axial  ! Axial stress (σ₁)
-        sigma(2) = conf_p         ! Radial stress (σ₂)
-        sigma(3) = conf_p         ! Radial stress (σ₃)
+        sigma(2) = conf_p        ! Radial stress (σ₂)
+        sigma(3) = conf_p          ! Radial stress (σ₃)
         
         ! Calculate stress invariants in principal stress space
         I1 = sigma(1) + sigma(2) + sigma(3)  ! First invariant (I₁ = σ₁ + σ₂ + σ₃)
         
         ! Calculate J2 (second invariant of deviatoric stress tensor)
         ! J₂ = 1/6 * [(σ₁-σ₂)² + (σ₂-σ₃)² + (σ₃-σ₁)²]
-        J2 = ! From the equation above, fill in the equation for second invariant
+        J2 = (1.0_dp/6.0_dp) * ((sigma(1)-sigma(2))**2 + (sigma(2)-sigma(3))**2 + (sigma(3)-sigma(1))**2)! From the equation above, fill in the equation for second invariant
         
         ! Drucker-Prager yield criterion: √J₂ = A + B·I₁
-        yield_func = ! Plastic flow happens when f=0. From the equation above, fill in the yield function's equation
+        yield_func = SQRT(J2) - (A + B*I1)! Plastic flow happens when f=0. From the equation above, fill in the yield function's equation
         
-        if (yield_func .fillin. 0.0_dp) then !think about when plastic correction is needed
+        if (yield_func > 0.0_dp) then !think about when plastic correction is needed
             ! Plastic correction needed - enforce yield condition
             ! For triaxial test with constant confining pressure (σ₂ = σ₃ = conf_p),
             ! we can solve for σ₁ directly.
@@ -169,7 +169,7 @@ contains
             ! σ₁(1/√3 - B) = A + σ₃(2B + 1/√3)
             ! σ₁ = (A + σ₃(2B + 1/√3)) / (1/√3 - B)
             
-            yield_stress = ! from the derivation above, fill in the yield stress
+            yield_stress = (A + conf_p*(2.0_dp*B + 1.0_dp/sqrt(3.0_dp))) / (1.0_dp/sqrt(3.0_dp) - B)! from the derivation above, fill in the yield stress
             axial_stress = yield_stress
         else
             ! Still in elastic regime
@@ -204,9 +204,9 @@ contains
         
         ! Check Mohr-Coulomb criterion 
         ! τ_m = σ_m sin(φ) + c cos(φ)
-        MC_yield = ! fill in the code from equatin above
+        MC_yield = sigma_m * sin_phi + C * cos_phi - tau_m! fill in the code from equatin above
         
-        if (MC_yield .fillinhere. 0.0_dp) then ! think about what is different to the D-P criterion you just completed
+        if (MC_yield < 0.0_dp) then ! think about what is different to the D-P criterion you just completed
             ! Plastic correction needed - enforce stress to be on yield surface
             ! Solve for sigma_1:
             ! τ_m = σ_m sin(φ) + c cos(φ)
@@ -216,7 +216,9 @@ contains
             ! σ₁ = σ₃ * (1 + sin(φ))/(1 - sin(φ)) + 2*c*cos(φ)/(1 - sin(φ))
             
             ! Calculate axial stress at yield:
-            axial_stress = ! fill in using the equation above
+            axial_stress = conf_p * (1.0_dp + sin_phi)/(1.0_dp - sin_phi) + &
+                          2.0_dp * c * cos_phi / (1.0_dp - sin_phi)
+! fill in using the equation above
         else
             ! Still in elastic regime
             axial_stress = elastic_axial
