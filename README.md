@@ -89,6 +89,11 @@ NUMERICAL-SOILS-SS25/
 └── requirements.txt     # Python dependencies (if applicable)
 ```
 
+## Schedule 
+
+- 24.04.2025 - Basics of Fortran, simple exercise
+- 06.05.2025 - Elastic, Drucker-Prager and Mohr-Coulomb 
+
 ## License
 This project is for academic use only. Please do not publish or share the solutions online.
 

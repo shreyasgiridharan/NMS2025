@@ -1,6 +1,33 @@
-*.db
-*.vsidx
-*.json
+<<<<<<< HEAD
 exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/v17/.suo
 exercise3/PerfectPlasticity2/PerfectPlasticity2/.vs/PerfectPlasticity2/v17/.suo
 exercise3/PerfectPlasticity2/PerfectPlasticity2/x64/Debug/PerfectPlasticity2.exe.intermediate.manifest
+=======
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/CodeChunks.db
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/CodeChunks.db-shm
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/CodeChunks.db-wal
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/SemanticSymbols.db
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/SemanticSymbols.db-shm
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/SemanticSymbols.db-wal
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/FileContentIndex/1f15384e-36d0-4f92-8810-6821ec67a15e.vsidx
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/FileContentIndex/dda0ce21-1c9a-49e3-b91f-f11aad10aacc.vsidx
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/v17/.suo
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/v17/DocumentLayout.backup.json
+exercise2/PerfectPlasticity/.vs/PerfectPlasticity/v17/DocumentLayout.json
+exercise2/PerfectPlasticity/PerfectPlasticity/drucker_prager_results.dat
+exercise2/PerfectPlasticity/PerfectPlasticity/elastic_results.dat
+exercise2/PerfectPlasticity/PerfectPlasticity/mohr_coulomb_results.dat
+exercise2/PerfectPlasticity/PerfectPlasticity/x64/Debug/PerfectPlasticity.exe
+exercise2/PerfectPlasticity/PerfectPlasticity/x64/Debug/PerfectPlasticity.exe.intermediate.manifest
+exercise2/PerfectPlasticity/PerfectPlasticity/x64/Debug/PerfectPlasticity.pdb
+exercise2/PerfectPlasticity/PerfectPlasticity/x64/Debug/PerfectPlasticity.obj
+>>>>>>> aa14e4d02385af48649ceaee5dd1b94f438bd4fc
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/CodeChunks.db
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/CopilotIndices/17.13.444.19527/SemanticSymbols.db
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/FileContentIndex/250b1162-cc64-46e8-9697-e6bfbe4a085b.vsidx
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/FileContentIndex/62cb6e1c-5f47-4ea4-a39f-e1edf1bd4c43.vsidx
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/FileContentIndex/6f285eb2-4cb8-4d07-9f81-1e72def80002.vsidx
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/FileContentIndex/7dd4a345-a570-4b4a-b743-dde912dec40b.vsidx
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/v17/DocumentLayout.backup.json
+exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/v17/DocumentLayout.json
+exercise3/PerfectPlasticity2/PerfectPlasticity2/x64/Debug/PerfectPlasticity2.pdb
