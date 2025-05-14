@@ -92,7 +92,8 @@ NUMERICAL-SOILS-SS25/
 ## Schedule 
 
 - 24.04.2025 - Basics of Fortran, simple exercise
-- 06.05.2025 - Elastic, Drucker-Prager and Mohr-Coulomb 
+- 06.05.2025 - Elastic, Drucker-Prager and Mohr-Coulomb
+- 15.05.2025 - Matsuoka-Nakai Triaxial test
 
 ## License
 This project is for academic use only. Please do not publish or share the solutions online.
