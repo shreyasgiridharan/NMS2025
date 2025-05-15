@@ -155,14 +155,14 @@ contains
         ! This can be rewritten as: sin²(φ) = (9-k)/(9+k)
         
         ! Convert k to friction angle
-        sin_phi = 
+        sin_phi = sqrt((9.0_dp - k)/(9.0_dp + k))
         phi_rad = asin(sin_phi)
         cos_phi = cos(phi_rad)
         
         ! Calculate cohesion parameter a = c'*cot(φ')
         if (abs(c) > 1.0e-10_dp .and. abs(sin_phi) > 1.0e-10_dp) then
-            tan_phi = 
-            a_cohesion = 
+            tan_phi = sin_phi / cos_phi
+            a_cohesion = c / tan_phi
         else
             a_cohesion = 0.0_dp
         end if
@@ -175,17 +175,19 @@ contains
         
         ! Calculate stress invariants with effective stresses
         ! I₁ᵃ = σ₁ᵃ + σ₂ᵃ + σ₃ᵃ
-        I1a = 
+        I1a = sigma_effective(1) + sigma_effective(2) + sigma_effective(3)
         
         ! I₂ᵃ = -(σ₁ᵃσ₂ᵃ + σ₂ᵃσ₃ᵃ + σ₃ᵃσ₁ᵃ)
-        I2a =
+        I2a = -(sigma_effective(1)*sigma_effective(2) + &
+            sigma_effective(2)*sigma_effective(3) + &
+            sigma_effective(3)*sigma_effective(1))
         
         ! I₃ᵃ = σ₁ᵃσ₂ᵃσ₃ᵃ
-        I3a = 
+        I3a = sigma_effective(1)*sigma_effective(2)*sigma_effective(3)
         
         ! Matsuoka-Nakai yield function as per the given formula:
         ! f = -I₁ᵃI₂ᵃ - ((9-sin²φ)/cos²φ)*I₃ᵃ
-        yield_func = 
+        yield_func = -I1a * I2a - ((9.0_dp - sin_phi**2.0_dp) / cos_phi**2.0_dp) * I3a
         
         if (yield_func > 0.0_dp) then
             ! Plastic correction needed - enforce yield condition
