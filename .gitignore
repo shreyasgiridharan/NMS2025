@@ -31,3 +31,10 @@ exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/FileContentIndex/7dd4a345-a57
 exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/v17/DocumentLayout.backup.json
 exercise3/PerfectPlasticity2/.vs/PerfectPlasticity/v17/DocumentLayout.json
 exercise3/PerfectPlasticity2/PerfectPlasticity2/x64/Debug/PerfectPlasticity2.pdb
+*.mod
+*.res
+*.vsidx
+*.db-wal
+*.db-shm
+*.json
+*.manifest

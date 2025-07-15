@@ -1,0 +1,10 @@
+1 1
+1 1
+1 0 0 0							
+2 1 0 0
+3 0 1 0
+4 1 1 0									   !Nodal coordinates
+1 1 2 4 3							   	   !Element node connectivity	
+10000,0.333,1.0							   !E, Nu, Mass
+0.0,0.0								   !Gravity load
+1000000,0.00001					  		   !No. of steps, time increment in each step
