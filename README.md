@@ -99,6 +99,9 @@ This project is for academic use only. Please do not publish or share the soluti
 
 ## Happy Modelling!
 
+## End of Semester!
+Thank you all for the active participation during the semester. I hope you all enjoyed the lecture, as much as I did. This repo is now archived, but is still accessible.
+
 
 
 
